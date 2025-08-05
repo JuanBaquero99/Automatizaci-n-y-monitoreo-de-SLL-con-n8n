@@ -72,10 +72,15 @@ aut-crecemos/
 
 ## 📊 Monitoreo
 
-El sistema verificará automáticamente:
+El sistema verificará automáticamente **cada lunes a las 9:00 AM**:
 - **Certificados SSL**: Estado y días hasta vencimiento
 - **Proveedores de Hosting**: Detección automática
 - **Alertas**: Emails automáticos según criticidad
+
+### Programación:
+- 🗓️ **Frecuencia**: Semanal (solo lunes)
+- ⏰ **Hora**: 9:00 AM (Colombia)
+- 📧 **Alertas**: Solo si hay vencimientos ≤ 30 días
 
 ### Estados SSL:
 - 🟢 **Excelente**: +30 días

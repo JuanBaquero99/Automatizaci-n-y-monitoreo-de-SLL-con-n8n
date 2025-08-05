@@ -61,7 +61,7 @@ Si quieres cambiar credenciales:
 
 ```json
 {
-  "name": "SSL Monitoring Automation",
+  "name": "SSL Monitoring - Weekly Monday Check",
   "nodes": [
     {
       "parameters": {
@@ -69,13 +69,13 @@ Si quieres cambiar credenciales:
           "interval": [
             {
               "field": "cronExpression",
-              "expression": "0 8 * * *"
+              "expression": "0 9 * * 1"
             }
           ]
         }
       },
       "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
-      "name": "Daily SSL Check",
+      "name": "Weekly SSL Check - Mondays 9AM",
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1.1,
       "position": [240, 300]
@@ -93,7 +93,7 @@ Si quieres cambiar credenciales:
     }
   ],
   "connections": {
-    "Daily SSL Check": {
+    "Weekly SSL Check - Mondays 9AM": {
       "main": [
         [
           {
