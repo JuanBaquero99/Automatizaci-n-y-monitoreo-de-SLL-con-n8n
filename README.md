@@ -1,92 +1,48 @@
-# 🚀 Sistema de Monitoreo SSL/Hosting - Automatización con n8n
+# 🚀 Sistema Manual de Monitoreo SSL
 
-Sistema automatizado para monitorear 21 clientes, incluyendo vencimientos de SSL, hosting y dominios.
+Sistema ultra-ligero para verificar certificados SSL **manualmente** cada lunes.
 
-## 📋 Características
+## 🎯 Uso Simple
 
-- ✅ Verificación automática de certificados SSL
-- ✅ Detección de proveedores de hosting
-- ✅ Alertas por email preventivas
-- ✅ Automatización completa con n8n
-- ✅ Deployment gratuito en Railway
+**Windows:**
+```cmd
+ejecutar_monitoreo.bat
+```
 
-## 🛠️ Tecnologías
-
-- **Python 3.8+** - Scripts de verificación
-- **n8n** - Automatización de workflows
-- **Railway** - Hosting gratuito
-- **PostgreSQL** - Base de datos
-- **Gmail SMTP** - Envío de alertas
-
-## 🚀 Deploy Rápido en Railway
-
-### 1. Preparar el repositorio
-
+**Linux/Mac:**
 ```bash
-git init
-git add .
-git commit -m "Sistema de monitoreo SSL inicial"
+./ejecutar_monitoreo.sh
 ```
 
-### 2. Conectar a Railway
+## 📊 Qué hace
 
-1. Ir a [railway.app](https://railway.app)
-2. Conectar con GitHub
-3. Deploy from GitHub repo
-4. Seleccionar `JuanBaquero99/Automatizaci-n-y-monitoreo-de-SLL-con-n8n`
+- ✅ Verifica 20 clientes SSL automáticamente
+- ✅ Detecta vencimientos próximos (≤ 30 días)  
+- ✅ Envía alertas por email cuando es necesario
+- ✅ Funciona 100% local, sin servidores
 
-### 3. Agregar PostgreSQL
+## 💾 Súper Ligero
 
-1. En el dashboard de Railway: `+ Add Service`
-2. Seleccionar `PostgreSQL`
-3. Railway conectará automáticamente las variables de entorno
+**Total**: ~15 KB
+- Scripts Python: ~10 KB
+- Base de datos: ~2 KB
+- Ejecutables: ~1 KB
+- Docs: ~2 KB
 
-### 4. Configurar n8n
+## 📧 Gmail (Opcional)
 
-Una vez deployado:
-1. Ir a la URL generada por Railway
-2. Login: `admin` / `crecemos2024`
-3. Importar workflows desde `/workflows/`
-
-## 📁 Estructura del Proyecto
-
-```
-aut-crecemos/
-├── scripts/
-│   ├── verificar_ssl.py      # Verificación SSL
-│   └── enviar_alertas.py     # Sistema de alertas
-├── data/
-│   └── clientes_ejemplo.json # Base de datos clientes
-├── workflows/
-│   └── ssl_monitoring.json   # Workflow n8n
-├── Dockerfile               # Configuración Docker
-├── railway.json            # Configuración Railway
-└── .env.example           # Variables de entorno
+Para alertas automáticas:
+```bash
+set EMAIL_USER=tu-email@gmail.com
+set EMAIL_PASSWORD=tu-app-password
+set EMAIL_DESTINATARIO=alertas@empresa.com
 ```
 
-## � Costos
+## 🗓️ Rutina Semanal
 
-- **Railway**: $5 USD/mes gratuitos (suficiente)
-- **Gmail SMTP**: Gratuito
-- **Total**: $0 USD/mes
-
-## 📊 Monitoreo
-
-El sistema verificará automáticamente **cada lunes a las 9:00 AM**:
-- **Certificados SSL**: Estado y días hasta vencimiento
-- **Proveedores de Hosting**: Detección automática
-- **Alertas**: Emails automáticos según criticidad
-
-### Programación:
-- 🗓️ **Frecuencia**: Semanal (solo lunes)
-- ⏰ **Hora**: 9:00 AM (Colombia)
-- 📧 **Alertas**: Solo si hay vencimientos ≤ 30 días
-
-### Estados SSL:
-- 🟢 **Excelente**: +30 días
-- 🟡 **Advertencia**: 7-30 días  
-- 🔴 **Urgente**: 1-7 días
-- 💀 **Vencido**: 0 días
+- **Frecuencia**: Cada lunes (o cuando quieras)
+- **Tiempo**: 2-3 minutos
+- **Costo**: $0
 
 ---
-*Desarrollado por CrecemosLab - Automatización 100% gratuita* 🚀
+*Versión manual ultra-ligera - Solo Python, sin servidores* 🎯
