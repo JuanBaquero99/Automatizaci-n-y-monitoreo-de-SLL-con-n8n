@@ -10,10 +10,6 @@ from email.mime.multipart import MIMEMultipart
 from datetime import datetime, timedelta
 import json
 import os
-from dotenv import load_dotenv
-
-# Cargar variables de entorno
-load_dotenv('config/.env')
 
 print("✅ Importaciones de email cargadas correctamente")
 
