@@ -27,11 +27,9 @@ RUN mkdir -p /data/scripts /data/data /data/workflows /home/node/.n8n && \
 COPY scripts/ /data/scripts/
 COPY data/ /data/data/
 COPY workflows/ /data/workflows/
-COPY start.sh /usr/local/bin/start.sh
 
 # Configurar permisos de ejecución
 RUN chmod +x /data/scripts/*.py && \
-    chmod +x /usr/local/bin/start.sh && \
     chown -R node:node /data /home/node/.n8n
 
 # Cambiar de vuelta al usuario node
@@ -51,5 +49,5 @@ ENV N8N_USER_FOLDER=/home/node/.n8n
 # Exponer puerto
 EXPOSE 5678
 
-# Comando de inicio usando el script
-CMD ["/usr/local/bin/start.sh"]
+# Comando de inicio directo sin script
+CMD ["n8n", "start"]
