@@ -1,0 +1,28 @@
+# Configuración para Koyeb (super fácil)
+name: ssl-monitoring
+region: fra  # Frankfurt (buena conexión)
+
+build:
+  type: dockerfile
+  dockerfile: Dockerfile.simple2
+
+env:
+  - N8N_BASIC_AUTH_ACTIVE=true
+  - N8N_BASIC_AUTH_USER=admin
+  - N8N_BASIC_AUTH_PASSWORD=crecemos2024
+
+ports:
+  - port: 5678
+    protocol: http
+
+health_check:
+  http:
+    path: /
+    port: 5678
+
+scaling:
+  min: 0
+  max: 1
+
+# Plan gratuito
+plan: free

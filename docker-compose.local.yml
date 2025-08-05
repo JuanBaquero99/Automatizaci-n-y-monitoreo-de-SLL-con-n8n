@@ -1,0 +1,23 @@
+# Solución LOCAL con exposición pública
+# Ejecutar en tu PC con ngrok
+
+version: '3.8'
+services:
+  n8n:
+    image: n8nio/n8n:latest
+    restart: always
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=admin
+      - N8N_BASIC_AUTH_PASSWORD=crecemos2024
+      - GENERIC_TIMEZONE=America/Bogota
+    volumes:
+      - ./scripts:/data/scripts
+      - ./data:/data/data
+      - ./workflows:/data/workflows
+      - n8n_storage:/home/node/.n8n
+
+volumes:
+  n8n_storage:
