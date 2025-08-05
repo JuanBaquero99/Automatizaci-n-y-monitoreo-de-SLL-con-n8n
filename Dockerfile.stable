@@ -1,25 +1,25 @@
-# Solución definitiva ultra-minimalista
-FROM n8nio/n8n:1.45.1
+# Versión super estable con n8n 1.0.5 (versión más estable)
+FROM n8nio/n8n:1.0.5
 
 USER root
 
-# Solo lo esencial
+# Instalar solo Python básico
 RUN apk add --no-cache python3 py3-requests
 
-# Copiar scripts
+# Copiar archivos
 COPY scripts/ /data/scripts/
 COPY data/ /data/data/
 COPY workflows/ /data/workflows/
 
-# Permisos básicos
+# Permisos
 RUN chown -R node:node /data
 
 USER node
 
-# Solo variables críticas
+# Variables esenciales
 ENV N8N_BASIC_AUTH_ACTIVE=true
 ENV N8N_BASIC_AUTH_USER=admin
 ENV N8N_BASIC_AUTH_PASSWORD=crecemos2024
 
 EXPOSE 5678
-CMD ["n8n", "start"]
+CMD ["n8n"]
