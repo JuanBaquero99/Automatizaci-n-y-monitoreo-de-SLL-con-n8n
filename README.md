@@ -33,7 +33,7 @@ git commit -m "Sistema de monitoreo SSL inicial"
 1. Ir a [railway.app](https://railway.app)
 2. Conectar con GitHub
 3. Deploy from GitHub repo
-4. Seleccionar `JuanBaquero99/ssl-monitoring-automation`
+4. Seleccionar `JuanBaquero99/Automatizaci-n-y-monitoreo-de-SLL-con-n8n`
 
 ### 3. Agregar PostgreSQL
 
