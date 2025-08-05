@@ -11,7 +11,7 @@
 
 2. **Conectar repositorio local**:
    ```bash
-   git remote add origin https://github.com/TU_USUARIO/ssl-monitoring-automation.git
+   git remote add origin https://github.com/JuanBaquero99/ssl-monitoring-automation.git
    git branch -M main
    git push -u origin main
    ```
@@ -26,7 +26,7 @@
 2. **Crear nuevo proyecto**:
    - Click "New Project"
    - "Deploy from GitHub repo"
-   - Seleccionar `ssl-monitoring-automation`
+   - Seleccionar `JuanBaquero99/ssl-monitoring-automation`
    - ✅ Railway detectará automáticamente el Dockerfile
 
 3. **Agregar PostgreSQL**:
