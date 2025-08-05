@@ -1,0 +1,56 @@
+services:
+  - type: web
+    name: ssl-monitoring-n8n
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: "true"
+      - key: N8N_BASIC_AUTH_USER
+        value: "admin"
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: "crecemos2024"
+      - key: GENERIC_TIMEZONE
+        value: "America/Bogota"
+      - key: N8N_HOST
+        value: "0.0.0.0"
+      - key: N8N_PORT
+        value: "5678"
+      - key: WEBHOOK_URL
+        sync: false
+      - key: DB_TYPE
+        value: "postgresdb"
+      - key: DB_POSTGRESDB_HOST
+        fromDatabase:
+          name: ssl-monitoring-db
+          property: host
+      - key: DB_POSTGRESDB_PORT
+        fromDatabase:
+          name: ssl-monitoring-db
+          property: port
+      - key: DB_POSTGRESDB_DATABASE
+        fromDatabase:
+          name: ssl-monitoring-db
+          property: database
+      - key: DB_POSTGRESDB_USER
+        fromDatabase:
+          name: ssl-monitoring-db
+          property: user
+      - key: DB_POSTGRESDB_PASSWORD
+        fromDatabase:
+          name: ssl-monitoring-db
+          property: password
+
+  - type: pserv
+    name: ssl-monitoring-db
+    env: docker
+    plan: free
+    dockerCommand: postgres:13
+    envVars:
+      - key: POSTGRES_DB
+        value: n8n
+      - key: POSTGRES_USER
+        value: n8n_user
+      - key: POSTGRES_PASSWORD
+        generateValue: true
