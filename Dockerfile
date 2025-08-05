@@ -1,53 +1,47 @@
-# n8n Automation Server with Python support
-FROM n8nio/n8n:1.45.1
+# Solución definitiva - n8n con Node.js base
+FROM node:18-alpine
 
-# Cambiar a root para instalar dependencias
-USER root
-
-# Instalar Python y dependencias en una sola capa
+# Instalar n8n globalmente y dependencias Python
 RUN apk add --no-cache \
-    gcc \
-    libffi-dev \
-    musl-dev \
-    openssl-dev \
-    py3-pip \
     python3 \
-    python3-dev \
+    py3-pip \
+    py3-requests \
     tzdata && \
-    pip3 install --break-system-packages --no-cache-dir \
+    npm install -g n8n@1.45.1 && \
+    pip3 install --break-system-packages \
     loguru \
-    python-dateutil \
-    requests
+    python-dateutil
 
-# Crear directorios y configurar permisos
-RUN mkdir -p /data/scripts /data/data /data/workflows /home/node/.n8n && \
+# Crear usuario y directorios
+RUN addgroup -g 1000 node && \
+    adduser -u 1000 -G node -s /bin/sh -D node && \
+    mkdir -p /data/scripts /data/data /data/workflows /home/node/.n8n && \
     chown -R node:node /data /home/node/.n8n
 
-# Copiar archivos
+# Copiar archivos como root
 COPY scripts/ /data/scripts/
 COPY data/ /data/data/
 COPY workflows/ /data/workflows/
 
-# Configurar permisos de ejecución
+# Configurar permisos
 RUN chmod +x /data/scripts/*.py && \
     chown -R node:node /data /home/node/.n8n
 
-# Cambiar de vuelta al usuario node
+# Cambiar a usuario node
 USER node
+WORKDIR /home/node
 
-# Variables de entorno para configuración
+# Variables de entorno
 ENV N8N_BASIC_AUTH_ACTIVE=true
 ENV N8N_BASIC_AUTH_USER=admin
 ENV N8N_BASIC_AUTH_PASSWORD=crecemos2024
 ENV N8N_HOST=0.0.0.0
 ENV N8N_PORT=5678
-ENV NODE_ENV=production
-ENV GENERIC_TIMEZONE=America/Bogota
-ENV TZ=America/Bogota
 ENV N8N_USER_FOLDER=/home/node/.n8n
+ENV GENERIC_TIMEZONE=America/Bogota
 
-# Exponer puerto
+# Puerto
 EXPOSE 5678
 
-# Comando de inicio directo sin script
+# Comando definitivo
 CMD ["n8n", "start"]

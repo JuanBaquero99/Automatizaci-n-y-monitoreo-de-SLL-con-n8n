@@ -1,0 +1,37 @@
+# Versión alternativa con imagen n8n oficial más nueva
+FROM n8nio/n8n:latest
+
+# Root para instalar dependencias
+USER root
+
+# Instalar Python sin compiladores para ser más ligero
+RUN apk add --no-cache \
+    python3 \
+    py3-requests \
+    py3-pip && \
+    pip3 install --break-system-packages \
+    loguru \
+    python-dateutil
+
+# Crear estructura y copiar archivos
+RUN mkdir -p /data/scripts /data/data /data/workflows
+COPY scripts/ /data/scripts/
+COPY data/ /data/data/
+COPY workflows/ /data/workflows/
+
+# Permisos para node
+RUN chown -R node:node /data && \
+    chmod +x /data/scripts/*.py
+
+# Usuario node
+USER node
+
+# Variables esenciales
+ENV N8N_BASIC_AUTH_ACTIVE=true
+ENV N8N_BASIC_AUTH_USER=admin  
+ENV N8N_BASIC_AUTH_PASSWORD=crecemos2024
+ENV N8N_HOST=0.0.0.0
+ENV N8N_PORT=5678
+
+EXPOSE 5678
+CMD ["n8n", "start"]
