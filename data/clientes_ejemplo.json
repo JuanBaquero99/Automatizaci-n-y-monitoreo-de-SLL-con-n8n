@@ -3,49 +3,45 @@
     "id": 1,
     "nombre": "La Carolina Medical",
     "dominio": "lacarolinamedical.com",
-    "proveedor_hosting": "Por determinar",
-    "fecha_vencimiento_dominio": "2025-12-31",
-    "fecha_vencimiento_hosting": "2025-12-31",
-    "fecha_vencimiento_ssl": "2025-12-31",
-    "email_contacto": "info@lacarolinamedical.com",
+    "proveedor_hosting": "GoDaddy",
+    "fecha_vencimiento_dominio": "2028-08-22",
+    "fecha_vencimiento_hosting": "2028-08-22",
+    "fecha_vencimiento_ssl": "Auto-renovable",
     "activo": true,
-    "notas": "Cliente real - verificar SSL automático"
+    "notas": "GoDaddy (22/08/2028) - SSL automático"
   },
   {
     "id": 2,
     "nombre": "Dra Patricia Alvarez",
     "dominio": "drapatriciaalvarez.com",
-    "proveedor_hosting": "Por determinar",
-    "fecha_vencimiento_dominio": "2025-12-31",
-    "fecha_vencimiento_hosting": "2025-12-31",
-    "fecha_vencimiento_ssl": "2025-12-31",
-    "email_contacto": "info@drapatriciaalvarez.com",
+    "proveedor_hosting": "Namecheap",
+    "fecha_vencimiento_dominio": "2026-05-18",
+    "fecha_vencimiento_hosting": "2026-05-18",
+    "fecha_vencimiento_ssl": "Auto-renovable",
     "activo": true,
-    "notas": "Cliente real - verificar SSL automático"
+    "notas": "Namecheap (2026-05-18) - SSL automático"
   },
   {
     "id": 3,
     "nombre": "Funcedi",
     "dominio": "funcedi.org",
-    "proveedor_hosting": "Por determinar",
-    "fecha_vencimiento_dominio": "2025-12-31",
-    "fecha_vencimiento_hosting": "2025-12-31",
-    "fecha_vencimiento_ssl": "2025-12-31",
-    "email_contacto": "info@funcedi.org",
+    "proveedor_hosting": "Namecheap",
+    "fecha_vencimiento_dominio": "2026-06-22",
+    "fecha_vencimiento_hosting": "2026-06-22",
+    "fecha_vencimiento_ssl": "Auto-renovable",
     "activo": true,
-    "notas": "Cliente real - verificar SSL automático"
+    "notas": "Namecheap (2026-06-22) - SSL automático"
   },
   {
     "id": 4,
     "nombre": "Bariatric and Nutritional Store",
     "dominio": "tienda.bariatricandnutritional.co",
-    "proveedor_hosting": "Por determinar",
-    "fecha_vencimiento_dominio": "2025-12-31",
-    "fecha_vencimiento_hosting": "2025-12-31",
-    "fecha_vencimiento_ssl": "2025-12-31",
-    "email_contacto": "info@bariatricandnutritional.co",
+    "proveedor_hosting": "GoDaddy",
+    "fecha_vencimiento_dominio": "2025-11-21",
+    "fecha_vencimiento_hosting": "2025-11-21",
+    "fecha_vencimiento_ssl": "Auto-renovable",
     "activo": true,
-    "notas": "Cliente real - verificar SSL automático"
+    "notas": "GoDaddy (21/11/2025) - SSL Let's Encrypt"
   },
   {
     "id": 5,
@@ -63,37 +59,34 @@
     "id": 6,
     "nombre": "Nai Gaviria",
     "dominio": "naigaviria.com",
-    "proveedor_hosting": "Por determinar",
-    "fecha_vencimiento_dominio": "2025-12-31",
-    "fecha_vencimiento_hosting": "2025-12-31",
-    "fecha_vencimiento_ssl": "2025-12-31",
-    "email_contacto": "info@naigaviria.com",
+    "proveedor_hosting": "Hostinger",
+    "fecha_vencimiento_dominio": "2026-09-06",
+    "fecha_vencimiento_hosting": "2026-09-06",
+    "fecha_vencimiento_ssl": "Auto-renovable",
     "activo": true,
-    "notas": "Cliente real - verificar SSL automático"
+    "notas": "Hostinger (2026-09-06) + GoDaddy (26/01/2029) - SSL Let's Encrypt"
   },
   {
     "id": 7,
     "nombre": "Juan Gaviria",
     "dominio": "juangaviria.com",
-    "proveedor_hosting": "Por determinar",
-    "fecha_vencimiento_dominio": "2025-12-31",
-    "fecha_vencimiento_hosting": "2025-12-31",
-    "fecha_vencimiento_ssl": "2025-12-31",
-    "email_contacto": "info@juangaviria.com",
+    "proveedor_hosting": "Hostinger",
+    "fecha_vencimiento_dominio": "2026-09-06",
+    "fecha_vencimiento_hosting": "2026-09-06",
+    "fecha_vencimiento_ssl": "Auto-renovable",
     "activo": true,
-    "notas": "Cliente real - verificar SSL automático"
+    "notas": "Hostinger (2026-09-06) + GoDaddy (26/01/2029) - SSL Let's Encrypt"
   },
   {
     "id": 8,
-    "nombre": "Hígado Colombia",
+    "nombre": "Hígado Colombia (ACH)",
     "dominio": "higadocolombia.org",
-    "proveedor_hosting": "Por determinar",
-    "fecha_vencimiento_dominio": "2025-12-31",
-    "fecha_vencimiento_hosting": "2025-12-31",
-    "fecha_vencimiento_ssl": "2025-12-31",
-    "email_contacto": "info@higadocolombia.org",
+    "proveedor_hosting": "Hostinger",
+    "fecha_vencimiento_dominio": "2026-03-04",
+    "fecha_vencimiento_hosting": "2026-07-14",
+    "fecha_vencimiento_ssl": "Auto-renovable",
     "activo": true,
-    "notas": "Cliente real - verificar SSL automático"
+    "notas": "Hostinger hosting (2026-07-14) + Premium Web Service (2026-03-04) - SSL Let's Encrypt"
   },
   {
     "id": 9,
@@ -123,25 +116,23 @@
     "id": 11,
     "nombre": "Clínica Guadalupe",
     "dominio": "clinicaguadalupe.com.co",
-    "proveedor_hosting": "Por determinar",
-    "fecha_vencimiento_dominio": "2025-12-31",
-    "fecha_vencimiento_hosting": "2025-12-31",
-    "fecha_vencimiento_ssl": "2025-12-31",
-    "email_contacto": "info@clinicaguadalupe.com.co",
+    "proveedor_hosting": "Hostinger",
+    "fecha_vencimiento_dominio": "2025-10-29",
+    "fecha_vencimiento_hosting": "2025-10-29",
+    "fecha_vencimiento_ssl": "Auto-verificar",
     "activo": true,
-    "notas": "Cliente real - verificar SSL automático"
+    "notas": "Hostinger (2025-10-29) + Premium Web Service (2025-10-29) - SSL automático"
   },
   {
     "id": 12,
     "nombre": "Asistir Mascotas",
     "dominio": "asistirmascotas.com",
-    "proveedor_hosting": "Por determinar",
-    "fecha_vencimiento_dominio": "2025-12-31",
-    "fecha_vencimiento_hosting": "2025-12-31",
-    "fecha_vencimiento_ssl": "2025-12-31",
-    "email_contacto": "info@asistirmascotas.com",
+    "proveedor_hosting": "Dongee",
+    "fecha_vencimiento_dominio": "2026-05-26",
+    "fecha_vencimiento_hosting": "2026-05-26",
+    "fecha_vencimiento_ssl": "Auto-verificar",
     "activo": true,
-    "notas": "Cliente real - verificar SSL automático"
+    "notas": "Dongee (2026-05-26) - SSL automático Let's Encrypt"
   },
   {
     "id": 13,
@@ -159,13 +150,12 @@
     "id": 14,
     "nombre": "Guapo Love",
     "dominio": "guapolove.com",
-    "proveedor_hosting": "Por determinar",
-    "fecha_vencimiento_dominio": "2025-12-31",
-    "fecha_vencimiento_hosting": "2025-12-31",
-    "fecha_vencimiento_ssl": "2025-12-31",
-    "email_contacto": "info@guapolove.com",
+    "proveedor_hosting": "Hostinger",
+    "fecha_vencimiento_dominio": "2025-10-29",
+    "fecha_vencimiento_hosting": "2026-10-29",
+    "fecha_vencimiento_ssl": "Auto-verificar",
     "activo": true,
-    "notas": "Cliente real - verificar SSL automático"
+    "notas": "Hostinger (2026-10-29) + Premium Web Service (2025-10-29) - SSL automático"
   },
   {
     "id": 15,
@@ -183,13 +173,12 @@
     "id": 16,
     "nombre": "DMC Travels",
     "dominio": "dmctravels.co",
-    "proveedor_hosting": "Por determinar",
-    "fecha_vencimiento_dominio": "2025-12-31",
-    "fecha_vencimiento_hosting": "2025-12-31",
-    "fecha_vencimiento_ssl": "2025-12-31",
-    "email_contacto": "info@dmctravels.co",
+    "proveedor_hosting": "GoDaddy",
+    "fecha_vencimiento_dominio": "2025-11-14",
+    "fecha_vencimiento_hosting": "2025-11-14",
+    "fecha_vencimiento_ssl": "Auto-verificar",
     "activo": true,
-    "notas": "Cliente real - verificar SSL automático"
+    "notas": "GoDaddy (2025-11-14) - SSL automático Let's Encrypt"
   },
   {
     "id": 17,
@@ -207,13 +196,12 @@
     "id": 18,
     "nombre": "Logistic Sports",
     "dominio": "logisticsports.com",
-    "proveedor_hosting": "Por determinar",
-    "fecha_vencimiento_dominio": "2025-12-31",
-    "fecha_vencimiento_hosting": "2025-12-31",
-    "fecha_vencimiento_ssl": "2025-12-31",
-    "email_contacto": "info@logisticsports.com",
+    "proveedor_hosting": "Hostinger",
+    "fecha_vencimiento_dominio": "2025-10-29",
+    "fecha_vencimiento_hosting": "2026-08-30",
+    "fecha_vencimiento_ssl": "Auto-verificar",
     "activo": true,
-    "notas": "Cliente real - verificar SSL automático"
+    "notas": "Hostinger (2026-08-30) + Premium Web Service (2025-10-29) - SSL automático"
   },
   {
     "id": 19,
@@ -231,12 +219,55 @@
     "id": 20,
     "nombre": "Knowing",
     "dominio": "knowing.com.co",
-    "proveedor_hosting": "Por determinar",
-    "fecha_vencimiento_dominio": "2025-12-31",
-    "fecha_vencimiento_hosting": "2025-12-31",
-    "fecha_vencimiento_ssl": "2025-12-31",
-    "email_contacto": "info@knowing.com.co",
+    "proveedor_hosting": "Hostinger",
+    "fecha_vencimiento_dominio": "2026-03-05",
+    "fecha_vencimiento_hosting": "2026-03-05",
+    "fecha_vencimiento_ssl": "Auto-verificar",
     "activo": true,
-    "notas": "Cliente real - verificar SSL automático"
+    "notas": "Hostinger (2026-03-05) - SSL automático Let's Encrypt"
+  },
+  {
+    "id": 21,
+    "nombre": "Hotel Campestre Montecarlo",
+    "dominio": "hotelcampestremontecarlo.com.co",
+    "proveedor_hosting": "Hostinger",
+    "fecha_vencimiento_dominio": "2025-10-29",
+    "fecha_vencimiento_hosting": "2025-11-25",
+    "fecha_vencimiento_ssl": "Auto-verificar",
+    "activo": true,
+    "notas": "Hostinger (2025-11-25) + Premium Web Service (2025-10-29) - SSL automático"
+  },
+  {
+    "id": 22,
+    "nombre": "Farmacias Especializadas",
+    "dominio": "farmaespecializadas.co",
+    "proveedor_hosting": "Hostinger",
+    "fecha_vencimiento_dominio": "2026-10-03",
+    "fecha_vencimiento_hosting": "2026-10-03",
+    "fecha_vencimiento_ssl": "Auto-verificar",
+    "activo": true,
+    "notas": "Hostinger (2026-10-03) - SSL automático Let's Encrypt"
+  },
+  {
+    "id": 23,
+    "nombre": "Gastrofarma",
+    "dominio": "gastrofarma.co",
+    "proveedor_hosting": "Hostinger",
+    "fecha_vencimiento_dominio": "2026-10-03",
+    "fecha_vencimiento_hosting": "2026-10-03",
+    "fecha_vencimiento_ssl": "Auto-verificar",
+    "activo": true,
+    "notas": "Hostinger (2026-10-03) - SSL automático Let's Encrypt"
+  },
+  {
+    "id": 24,
+    "nombre": "BNS - Bariatric Nutritional (Sitio Principal)",
+    "dominio": "bariatricandnutritional.co",
+    "proveedor_hosting": "GoDaddy",
+    "fecha_vencimiento_dominio": "2025-11-21",
+    "fecha_vencimiento_hosting": "2025-11-21",
+    "fecha_vencimiento_ssl": "Auto-verificar",
+    "activo": true,
+    "notas": "GoDaddy (21/11/2025) - Sitio principal WordPress, SSL automático"
   }
 ]
